@@ -13,6 +13,6 @@ int main()
  seconds = seconds % 60;
     
  printf("%d:%d:%d\n", hours, minutes, seconds);
-    
+    //hudai
  return 0;
 }

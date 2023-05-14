@@ -2,29 +2,29 @@
 #include<cmath>
 using namespace std;
 int main() {
-    unsigned int n, l, c, lines, characters;
+    unsigned int n, l, c, lines, ch;
     string word;
 
     while (cin >> n >> l >> c) {
         lines = 1;
-        characters = 0;
-        int an=1;
+        ch = 0;
+        int page=1;
         while (n--) {
             cin >> word;
-            if (characters + (characters != 0) + word.length() <=c) {
-                characters += word.length() +  (characters != 0);
+            if (ch + (ch != 0) + word.length() <=c) {
+                ch += word.length() +  (ch != 0);
 
             } else {
-                characters = word.length();
+                ch = word.length();
                 lines++;
                 if(lines > l){
-                    an++;
+                    page++;
                     lines=1;
                 }
             }
         }
 
-            cout << an <<endl;
+            cout << page <<endl;
     }
     return 0;
 }

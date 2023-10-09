@@ -1,0 +1,12 @@
+{% block content %}
+
+<form action="" method="POST"> 
+    {% csrf_token %}
+    <p>Are you sure? You want to delete?</p>
+
+    <button><a href =" {% url 'clubs' %}">Go back</a></button>
+
+    <input type = "submit" value ="Confirm" />
+
+{% endblock content %}
+

@@ -1,0 +1,9 @@
+<h1>Club Members</h1>
+
+{% for club in proObjs %}
+  <p></p>
+  <img src="{{club.Image.url}}" style="width:50px; height:60px;">
+  <span style="border:1px solid red">{{ club.name }}</span> 
+  <a href="{% url 'update_project' pk=club.name %}">Update</a>
+  <a href = "{% url 'delete_project' pk=club.name %}">Delete</a>
+{% endfor %}

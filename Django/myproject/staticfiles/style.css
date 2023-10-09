@@ -1,0 +1,117 @@
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body{
+  
+  background-image:linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.801)), url(all.jpeg) ;
+  
+  background-position: center;
+  background-size: cover;
+  background-size: 100%, 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: larger;
+  font-weight: 900;
+  font-display: inherit;
+  font-style: italic;
+  color: aliceblue;
+ 
+
+}
+
+
+  p {
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+  }
+
+
+  hr {
+    border: 3px solid #e2dcdc;
+    inline-size: 80%;
+    align-tracks: start;
+  }
+  
+
+  h1 {
+    font-size: 50px;
+    color: rgb(18, 230, 184);
+    text-align-last: center;
+  }
+  h2{
+    font-size: 35px;
+    color: rgb(43, 230, 18);
+   text-align: justify;
+   margin-left: 10%;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: rgb(230, 145, 18);
+
+  } 
+  
+  h4{
+    font-size: 60px;
+    color: red;
+    text-align: center;
+  }
+ 
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 155%;
+    color: antiquewhite;
+    margin-left: 10%;
+  }
+
+  li a{
+    width: 100px;
+    height: 70px;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 5px;
+  }
+
+  li a:hover{
+    width: 50px;
+    height: 200px;
+    background-color: rgb(99, 10, 243);
+    transform: scale(1.2, 1.2);
+    }
+
+    .personal{
+
+      width: 40%;
+  
+      float: right;
+  
+      margin-right: -345px;
+  
+      margin-top: 10px;
+  
+  }
+  
+  .personal img{
+  
+      width: 30%;
+      height: 30%;
+  
+  }
+  

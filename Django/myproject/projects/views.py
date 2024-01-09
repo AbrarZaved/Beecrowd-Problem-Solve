@@ -1,7 +1,10 @@
 from django.shortcuts import render , redirect
 from django.http import HttpResponse
 from .models import CLUB
+<<<<<<< HEAD
 from .models import Profile
+=======
+>>>>>>> 049d486318770b0a0febe5699e65ef117c930f2c
 from .forms import ProjectForm
 
 def name(request):
@@ -21,6 +24,7 @@ def counter(request):
 def css(request):
     return render(request,'projects/css.html')
 
+<<<<<<< HEAD
 
 
 def clubs(request):
@@ -32,6 +36,13 @@ def clubs(request):
 
     return render(request, 'projects/clubs.html', {'names': names, 'proObjs': proObjs, 'profile': profile})
 
+=======
+def clubs(request):
+    proObjs = CLUB.objects.all()
+    names = [obj.name for obj in proObjs]
+    print('proObjs:', proObjs)
+    return render(request, 'projects/clubs.html', {'names': names, 'proObjs': proObjs})
+>>>>>>> 049d486318770b0a0febe5699e65ef117c930f2c
 
 def createProject(request):
     form = ProjectForm()

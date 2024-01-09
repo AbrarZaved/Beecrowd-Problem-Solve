@@ -1,5 +1,8 @@
 from django.db import models
+<<<<<<< HEAD
 from users.models import Profile
+=======
+>>>>>>> 049d486318770b0a0febe5699e65ef117c930f2c
 import uuid
 class info(models.Model):
     title = models.CharField(max_length=200)
@@ -15,7 +18,10 @@ class info(models.Model):
 
 
 class CLUB(models.Model):
+<<<<<<< HEAD
     owner = models.ForeignKey(Profile,null=True,blank=True,on_delete=models.SET_NULL)
+=======
+>>>>>>> 049d486318770b0a0febe5699e65ef117c930f2c
     name =  models.CharField(max_length=100,blank=False,null=False)
     Student_ID= models.CharField(max_length=20,blank=False,null=False)
     Student_Mail = models.CharField(max_length=50,blank=False,null=False)
